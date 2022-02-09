@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Your mentor buddy Website</title>
+    <link rel="stylesheet" href="g.css" />
+  </head>
+  <body>
+    <section class="signup">
+        <div class="logo">
+            <img src="images/K3.png" alt="">
+        </div>
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Contact Information</h2>
+                    <form method="POST" class="register-form" id="register-form">
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required/>
+                        </div>
+                         <div class="form-group">
+                            <label for="number"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="tel" pattern="[6789][0-9]{9}" name="num" id="number" placeholder="Mobile no." required/>
+                        </div>
+                        <!-- <div class="form-group"> 
+                            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
+                         </div> -->
+                        <fieldset>
+                            <legend>ARE YOU A ?</legend>
+                            <div class="form-group">
+                                <input type="radio" id="student" name="category" value="student" required>
+                                <label for="student">Student</label><br>
+                                <input type="radio" id="Working-Professional" name="category" value="Working-Professional">
+                                <label for="Working-Professional">Working-Professional</label><br>
+                                <input type="radio" id="Recruiter" name="category" value="Recruiter">
+                                <label for="Recruiter">Recruiter</label>
+                            </div>
+                        </fieldset>
+                        
+                       
+                        <!-- <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        </div> -->
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                        </div>
+                    </form>
+                <!-- </div>
+                    <a href="login.html" class="signup-image-link">I am already member</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+  </body>
